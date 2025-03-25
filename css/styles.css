@@ -1,10 +1,16 @@
 *{
     scroll-behavior: smooth;
+   
 }
 
 body{
     margin:0;
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+   
 } 
+
 .hero{
    display:flex;
   justify-content: space-between;
@@ -27,6 +33,7 @@ nav ul {
     list-style: none;
     display: flex;
     padding:10px;
+   
 
 
 
@@ -34,12 +41,12 @@ nav ul {
 nav ul li{
    color:white;
    margin: 20px;
+   
 }
 nav ul li a{
     color: black;
-    justify-content: space-between;
     text-decoration:none;
-    padding:10px;
+    padding:30px;
    
 }
 .links:hover{
@@ -47,13 +54,10 @@ nav ul li a{
     text-decoration: underline;
 }
 
-.contact{
-    font-size: x-large;
-    background-color:white;
-    padding:10px;
-    justify-content: space-between;
-    display:flex;
-}
+
+   
+
+
 
 
 input{
@@ -62,6 +66,7 @@ input{
     height:50px;
     background-color: white;
     border-radius: 20px;
+    
 }
 textarea{
     margin-top:5px;
@@ -82,16 +87,37 @@ textarea{
     color:white;
 
 }
+.contact2{
+    display: flex;
+    justify-content: space-between;
+}
 
+
+.search{
+    display: block;
+   text-align: center;
+    padding:10px;
+    
+}
+
+#searchbar{
+   
+    width:50%;
+    /*The use of these two is what brings out that nice-looking search bar. */
+    border: 0.5px solid #cccccc;
+    border-radius: 5px;
+}
 
 .footer{
     background-color:black;
     text-align: center;
     padding: 1px;
     color:white;
+    
 }
 footer a img{
     margin:10px;
+    bottom:0;
     
 }
 #book-collection {
@@ -107,8 +133,12 @@ footer a img{
    
     padding: 10px;
     text-align: center;
+    margin-top: 20px;
+    
+    
    
 }
+
 .card button{
     /*This is what is making my button not appear at the side */
     width: 50%;
@@ -118,6 +148,28 @@ footer a img{
    color:white;
    
 }
+
+#contact-header{
+   
+        text-align: center;
+        font-size: x-large;
+    }
+    .contact-con{
+        background-color: beige;
+        position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;  /* This ensures it takes full screen height */
+    padding-bottom: 50px;
+    }
+   
+   
+
+    
+
+
+
 
 
 

@@ -41,16 +41,18 @@ nav ul {
 nav ul li{
    color:white;
    margin: 20px;
-   
+  ;
 }
 nav ul li a{
     color: black;
     text-decoration:none;
     padding:30px;
+    font-display: bold
+   
    
 }
 .links:hover{
-    color:blue;
+    color:#0056A0;
     text-decoration: underline;
 }
 

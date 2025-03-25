@@ -94,8 +94,31 @@ footer a img{
     margin:10px;
     
 }
-
-#
-.card{
-    margin-top:20px;
+#book-collection {
+    /*This is what has made my book to appear in the column form */
+    display: grid;
+    /*This is what has made to be in columns of 4 each in my browser */
+    grid-template-columns: repeat(4, 1fr); 
+ 
+    justify-content: center;
 }
+
+.card {
+   
+    padding: 10px;
+    text-align: center;
+   
+}
+.card button{
+    /*This is what is making my button not appear at the side */
+    width: 50%;
+    margin-top:10px;
+    border-radius: 5px;
+    background-color:#0056A0; 
+   color:white;
+   
+}
+
+
+
+

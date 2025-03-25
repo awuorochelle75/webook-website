@@ -1,6 +1,7 @@
 *{
     scroll-behavior: smooth;
 }
+
 body{
     margin:0;
 } 
@@ -44,4 +45,52 @@ nav ul li a{
 .links:hover{
     color:blue;
     text-decoration: underline;
+}
+
+.contact{
+    font-size: x-large;
+    background-color:white;
+    padding:10px;
+    justify-content: space-between;
+    display:flex;
+}
+
+
+input{
+    padding:5px;
+    width: 300px;
+    height:50px;
+    background-color: white;
+    border-radius: 20px;
+}
+textarea{
+    margin-top:5px;
+    height:60px;
+    width:400px;
+    background-color: white;
+    border-radius: 20px; 
+    text-align: left;
+    padding:6px;
+
+}
+.btn1{
+    width:200px;
+    height:40px;
+    background-color:#0056A0; 
+    align-items: center;
+    border-radius: 20px;
+    color:white;
+
+}
+
+
+.footer{
+    background-color:black;
+    text-align: center;
+    padding: 1px;
+    color:white;
+}
+footer a img{
+    margin:10px;
+    
 }

@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',function(){
             bookcard.classList.add('card')
 
             bookcard.innerHTML=`
-                <img src = '${book.image}' width=388px height=452px/>
+                <img src = '${book.image}' width=200px height=300px/>
                 <button id='${book.description}'>View Description</button>
                 <button id='${book.id}'>Purchase Book</button>
             `

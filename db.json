@@ -4,7 +4,7 @@
             "id":1,
             "title":"The Psychology of money",
             "author":"Morgan Housel",
-            "image":"images/morgan-housel.jpg", 
+            "image":"images/The Psychology of Money 💵🧠.jpeg", 
             "description":"An insightful book that teaches one how to understand how money works",
             "price":"Ksh 700"
 
@@ -13,7 +13,61 @@
             "id":2,
             "title":"How Innovation works",
             "author":"Morgan Housel",
-            "image":"images/matt-ridley.jpg",
+            "image":"images/book2.jpeg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":3,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book3.jpeg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":4,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book4.jpg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":5,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book5.jpeg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":6,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book6.jpeg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":7,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book7.jpg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":8,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/book8.jpg",
             "description":"An book that challenges us to chnage our way of thinking towards innovation ",
             "price":"Ksh 700"
 

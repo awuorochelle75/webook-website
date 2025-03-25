@@ -1,0 +1,23 @@
+{
+    "books":[
+        {
+            "id":1,
+            "title":"The Psychology of money",
+            "author":"Morgan Housel",
+            "image":"images/morgan-housel.jpg",
+            "description":"An insightful book that teaches one how to understand how money works",
+            "price":"Ksh 700"
+
+        },
+        {
+            "id":2,
+            "title":"How Innovation works",
+            "author":"Morgan Housel",
+            "image":"images/matt-ridley.jpg",
+            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
+            "price":"Ksh 700"
+
+        }
+    ]
+    
+}

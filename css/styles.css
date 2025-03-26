@@ -8,6 +8,10 @@ body{
     display: block;
     flex-direction: column;
     min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+   
    
 } 
 
@@ -21,6 +25,7 @@ body{
    height:100vh;
    width:100vw;
    background-repeat: no-repeat;
+   flex-wrap: wrap;
  
    
 }
@@ -64,10 +69,10 @@ nav ul li a{
 
 input{
     padding:5px;
-    width: 300px;
+    width: 500px;
     height:50px;
     background-color: white;
-    border-radius: 20px;
+  
     
 }
 textarea{
@@ -75,7 +80,6 @@ textarea{
     height:60px;
     width:400px;
     background-color: white;
-    border-radius: 20px; 
     text-align: left;
     padding:6px;
 
@@ -87,12 +91,13 @@ textarea{
     align-items: center;
     border-radius: 20px;
     color:white;
+    margin-bottom:10px;
 
 }
-.contact2{
-    display: flex;
-    justify-content: space-between;
+.btn1:hover{
+    background-color:#48486e ;
 }
+
 
 
 .search{
@@ -151,24 +156,15 @@ footer a img{
    
 }
 
-#contact-header{
-   
-        text-align: center;
-        font-size: x-large;
-    }
-    .contact-con{
-        background-color: beige;
-        position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;  /* This ensures it takes full screen height */
-    padding-bottom: 50px;
-    }
+
+    
     .contact-container{
         display:flex;
         justify-content: center;
-        gap:70px;
+        gap:200px;
+        background-color:#cccccc;
+        flex-wrap: wrap;
+       
         
     }
     .line-through{
@@ -184,7 +180,15 @@ footer a img{
    }
    #form-section{
     text-align: center;
+    margin-top:20px;
+   
    }
+   
+   #message{
+        color:darkmagenta;
+        display: none;
+   }
+   
    
    
    

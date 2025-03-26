@@ -117,7 +117,7 @@ textarea{
 }
 
 .footer{
-    background-color:black;
+    background-color:  #1B1B1B ;
     text-align: center;
     padding: 1px;
     color:white;
@@ -188,6 +188,10 @@ footer a img{
    #message{
         color:darkmagenta;
         display: none;
+   }
+   .footer-links:hover{
+    color:#0056A0;
+
    }
    
    

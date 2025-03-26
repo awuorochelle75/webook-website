@@ -72,9 +72,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         
         bookList.addEventListener('click', async function (event) {
             if (event.target.classList.contains('purchase-btn')) {
-                const bookId = event.target.previousElementSibling.id;
-                const book = books.find(b => b.id == bookId);
+                const bookCard = event.target.closest('.card'); // Get the parent card
+                const bookId = bookCard.querySelector('.btn-view').dataset.id; // Get book ID
         
+                const book = books.find(b => b.id == bookId);
                 if (confirm(`Do you want to buy "${book.title}" for ${book.price}?`)) {
                     alert('Purchase successful! Thank you for buying.');
                 }

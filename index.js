@@ -24,18 +24,29 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             bookcard.innerHTML = `
                 <img src='${book.image}' width=200px height=300px/>
-                <button class="btn-view"
-                    data-title="${book.title}"
-                    data-author="${book.author}"
-                    data-price="${book.price}"
-                    data-description="${book.description}"
-                    data-image="${book.image}"
-                >View</button>
+                <button class="btn-view" id="${book.id}">View</button>
                 <button class="purchase-btn">Purchase Book</button>
             `;
             bookList.appendChild(bookcard);
         });
+        bookList.addEventListener('click', async function (event) {
+            if (event.target.classList.contains('purchase-btn')) {
+                const bookId = event.target.previousElementSibling.id;
+                const book = books.find(b => b.id == bookId);
+        
+                if (confirm(`Do you want to buy "${book.title}" for ${book.price}?`)) {
+                    alert('Purchase successful! Thank you for buying.');
+                }
+            }
+        });
+        
+   
     }
+   
+
+
+
+
 
     await fetchBooks(); // ✅ Load books when the page loads
 
@@ -54,16 +65,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         displayBooks(filteredBooks); // ✅ Update book list after filtering
     }
 
-    document.getElementById("contacts").addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent navigation
-        fetch("contact.html")
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("contacts-info").innerHTML = data;
-            })
-            .catch(error => console.error("Error loading contacts:", error));
-    });
-    
+   
 
 
     // ✅ Attach event listeners
@@ -71,7 +73,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     genreFilter.addEventListener('change', filterBooks);
 
     // ✅ Handle "Contact Us" section
-   /* contact.addEventListener('click', async function (e) {
+    contact.addEventListener('click', async function (e) {
         e.preventDefault();
 
         const contactContent = document.getElementById('contacts-info');
@@ -103,5 +105,5 @@ document.addEventListener('DOMContentLoaded', async function () {
                 </div>  
             </section>
         `;
-    });*/
+    });
 });

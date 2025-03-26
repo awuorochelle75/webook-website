@@ -1,77 +1,224 @@
 {
-    "books":[
+    "books": [
         {
-            "id":1,
-            "title":"The Psychology of money",
-            "author":"Morgan Housel",
-            "image":"images/The Psychology of Money 💵🧠.jpeg", 
-            "description":"An insightful book that teaches one how to understand how money works",
-            "price":"Ksh 700"
-
+            "id": 1,
+            "title": "The Psychology of Money",
+            "lowerTitle": "the psychology of money",
+            "author": "Morgan Housel",
+            "genre": "Finance",
+            "image": "images/book1.jpeg",
+            "description": "A book that explores how people think about money and financial decisions.",
+            "price": "Ksh 1,200",
+            "tags": ["money", "finance", "psychology", "investment"]
         },
         {
-            "id":2,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book2.jpeg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 2,
+            "title": "From Zero To Millionaire",
+            "lowerTitle": "from zero to millionaire",
+            "author": "Nicolas Bérubé",
+            "genre": "Finance",
+            "image": "images/book2.jpeg",
+            "description": "A guide to building wealth and achieving financial independence.",
+            "price": "Ksh 1,500",
+            "tags": ["wealth", "investment", "financial independence"]
         },
         {
-            "id":3,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book3.jpeg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 3,
+            "title": "Versity",
+            "lowerTitle": "versity",
+            "author": "Coleen Hover",
+            "genre": "Romance",
+            "image": "images/book3.jpeg",
+            "description": "A story of forbidden love, passion, and secrets.",
+            "price": "Ksh 900",
+            "tags": ["romance", "love", "passion", "secrets"]
         },
         {
-            "id":4,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book4.jpg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 4,
+            "title": "The Chronicles of Narnia",
+            "lowerTitle": "the chronicles of narnia",
+            "author": "C.S. Lewis",
+            "genre": "Fantasy",
+            "image": "images/book4.jpg",
+            "description": "An adventurous tale of children discovering a magical world.",
+            "price": "Ksh 1,300",
+            "tags": ["fantasy", "adventure", "magic", "children"]
         },
         {
-            "id":5,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book5.jpeg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 5,
+            "title": "The Art Of Murder",
+            "lowerTitle": "the art of murder",
+            "author": "Rick Wood",
+            "genre": "Thriller",
+            "image": "images/book5.jpeg",
+            "description": "A gripping crime thriller with shocking twists.",
+            "price": "Ksh 950",
+            "tags": ["thriller", "crime", "mystery", "suspense"]
         },
         {
-            "id":6,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book6.jpeg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 6,
+            "title": "Right Behind You",
+            "lowerTitle": "right behind you",
+            "author": "Morgan Housel",
+            "genre": "Psychological Thriller",
+            "image": "images/book6.jpeg",
+            "description": "A chilling psychological thriller filled with suspense.",
+            "price": "Ksh 1,100",
+            "tags": ["thriller", "suspense", "psychological"]
         },
         {
-            "id":7,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book7.jpg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 7,
+            "title": "What We Forgot To Bury",
+            "lowerTitle": "what we forgot to bury",
+            "author": "Marin Montgomery",
+            "genre": "Suspense",
+            "image": "images/book7.jpeg",
+            "description": "A suspenseful novel about betrayal and revenge.",
+            "price": "Ksh 1,000",
+            "tags": ["suspense", "betrayal", "revenge", "mystery"]
         },
         {
-            "id":8,
-            "title":"How Innovation works",
-            "author":"Morgan Housel",
-            "image":"images/book8.jpg",
-            "description":"An book that challenges us to chnage our way of thinking towards innovation ",
-            "price":"Ksh 700"
-
+            "id": 8,
+            "title": "The Two Towers",
+            "lowerTitle": "the two towers",
+            "author": "J.R.R. Tolkien",
+            "genre": "Fantasy",
+            "image": "images/book8.jpg",
+            "description": "The second book in the epic 'Lord of the Rings' trilogy.",
+            "price": "Ksh 1,700",
+            "tags": ["fantasy", "adventure", "epic", "classic"]
+        },
+        {
+            "id": 9,
+            "title": "Her Final Hour",
+            "lowerTitle": "her final hour",
+            "author": "Karla Kovach",
+            "genre": "Crime",
+            "image": "images/book9.jpeg",
+            "description": "A detective thriller investigating a disturbing murder case.",
+            "price": "Ksh 1,200",
+            "tags": ["crime", "thriller", "detective", "mystery"]
+        },
+        {
+            "id": 10,
+            "title": "Priest",
+            "lowerTitle": "priest",
+            "author": "Sierra Simone",
+            "genre": "Romance",
+            "image": "images/book10.jpeg",
+            "description": "A forbidden romance between a priest and a woman.",
+            "price": "Ksh 850",
+            "tags": ["romance", "forbidden love", "passion"]
+        },
+        {
+            "id": 11,
+            "title": "The Sweetest Oblivion",
+            "lowerTitle": "the sweetest oblivion",
+            "author": "Danielle Lori",
+            "genre": "Romance",
+            "image": "images/book11.jpeg",
+            "description": "A mafia romance with passion and danger.",
+            "price": "Ksh 1,000",
+            "tags": ["romance", "mafia", "passion", "drama"]
+        },
+        {
+            "id": 12,
+            "title": "The Silver Crow",
+            "lowerTitle": "the silver crow",
+            "author": "Trif Premade",
+            "genre": "Fantasy",
+            "image": "images/book12.jpeg",
+            "description": "A tale of magic, mystery, and destiny.",
+            "price": "Ksh 1,300",
+            "tags": ["fantasy", "magic", "mystery", "destiny"]
+        },
+        {
+            "id": 13,
+            "title": "The Turning Point",
+            "lowerTitle": "the turning point",
+            "author": "Julia Ash",
+            "genre": "Drama",
+            "image": "images/book13.jpeg",
+            "description": "A life-changing story of resilience and hope.",
+            "price": "Ksh 900",
+            "tags": ["drama", "resilience", "hope"]
+        },
+        {
+            "id": 14,
+            "title": "Incursion",
+            "lowerTitle": "incursion",
+            "author": "Kevin and Elizabeth McLaughlin",
+            "genre": "Science Fiction",
+            "image": "images/book14.jpeg",
+            "description": "An action-packed sci-fi adventure.",
+            "price": "Ksh 1,400",
+            "tags": ["science fiction", "adventure", "action"]
+        },
+        {
+            "id": 15,
+            "title": "A Parallel Universe",
+            "lowerTitle": "a parallel universe",
+            "author": "Author Name",
+            "genre": "Science Fiction",
+            "image": "images/book15.jpeg",
+            "description": "A mind-bending journey through alternate realities.",
+            "price": "Ksh 1,200",
+            "tags": ["science fiction", "parallel worlds", "mystery"]
+        },
+        {
+            "id": 16,
+            "title": "The Wife Between Us",
+            "lowerTitle": "the wife between us",
+            "author": "Greer Hendricks & Sarah Pekkanen",
+            "genre": "Thriller",
+            "image": "images/book16.jpeg",
+            "description": "A psychological thriller with shocking twists.",
+            "price": "Ksh 1,100",
+            "tags": ["thriller", "psychological", "mystery"]
+        },
+        {
+            "id": 17,
+            "title": "Every Last Year",
+            "lowerTitle": "every last year",
+            "author": "Alex Finlay",
+            "genre": "Mystery",
+            "image": "images/book17.jpeg",
+            "description": "A gripping mystery about a missing person case.",
+            "price": "Ksh 1,300",
+            "tags": ["mystery", "suspense", "missing person"]
+        },
+        {
+            "id": 18,
+            "title": "The Inmate",
+            "lowerTitle": "the inmate",
+            "author": "Freida McFadden",
+            "genre": "Thriller",
+            "image": "images/book18.jpeg",
+            "description": "A psychological thriller set in a high-security prison.",
+            "price": "Ksh 1,500",
+            "tags": ["thriller", "prison", "psychological"]
+        },
+        {
+            "id": 19,
+            "title": "The Housemaid's Wedding",
+            "lowerTitle": "the housemaid's wedding",
+            "author": "Freida McFadden",
+            "genre": "Domestic Thriller",
+            "image": "images/book19.jpeg",
+            "description": "A story filled with secrets, lies, and suspense.",
+            "price": "Ksh 1,000",
+            "tags": ["thriller", "suspense", "secrets"]
+        },
+        {
+            "id": 20,
+            "title": "The Silent Patient",
+            "lowerTitle": "the silent patient",
+            "author": "Alex Michaelides",
+            "genre": "Psychological Thriller",
+            "image": "images/book20.jpeg",
+            "description": "A mystery about a woman who stops speaking after a crime.",
+            "price": "Ksh 1,800",
+            "tags": ["thriller", "psychological", "mystery"]
         }
     ]
-    
 }

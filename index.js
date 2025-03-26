@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',function(){
     const bookList = document.getElementById('book-collection')
-    fetch('http://localhost:3000/books')
+    fetch('https://webook-website.onrender.com/books')
     .then(response => response.json())
     .then(data=>{
         

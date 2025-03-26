@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
+
     // ✅ Function to display books
     function displayBooks(bookArray) {
         bookList.innerHTML = ''; // Clear old books before displaying
@@ -25,11 +26,50 @@ document.addEventListener('DOMContentLoaded', async function () {
 
             bookcard.innerHTML = `
                 <img src='${book.image}' width=200px height=300px/>
-                <button class="btn-view" id="${book.id}">View</button>
+                <button class="btn-view"  data-id="${book.id}">View</button>
                 <button class="purchase-btn">Purchase Book</button>
             `;
+
+            //Hidden description
+          
+          
             bookList.appendChild(bookcard);
         });
+        bookList.addEventListener('click', async function (event) {
+            if (event.target.classList.contains('btn-view')) {
+                const bookId = event.target.dataset.id;
+               // console.log("Fetching book details for ID:", bookId);
+                
+                try {
+                    const response = await fetch(`https://webook-website.onrender.com/books/${bookId}`);
+                    if (!response.ok) throw new Error('Failed to fetch book details');
+                    
+                    const book = await response.json();
+
+                    const message = `📖 Title: ${book.title}\n✍️ Author: ${book.author}\n📝 Description: ${book.description}\n💰 Price: ${book.price}\n📚 Genre: ${book.genre}`;
+                    message.style
+                    window.confirm(message); 
+        
+                    // Show book details in an alert
+                   /* alert(
+                        `📖 Title: ${book.title}\n` +
+                        `✍️ Author: ${book.author}\n` +
+                        `📝 Description: ${book.description}\n` +
+                        `💰 Price: ${book.price}`
+                    );*/
+        
+                } catch (error) {
+                    console.error('Error fetching book details:', error);
+                    alert('❌ Error fetching book details. Please try again.');
+                }
+            }
+        });
+        
+        
+        
+
+      
+        
         bookList.addEventListener('click', async function (event) {
             if (event.target.classList.contains('purchase-btn')) {
                 const bookId = event.target.previousElementSibling.id;
@@ -41,8 +81,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             }
         });
         
-   
     }
+    
    
 
 
@@ -100,5 +140,5 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     });
 
-    form-section
+   
 

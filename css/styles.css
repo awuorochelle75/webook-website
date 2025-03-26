@@ -190,6 +190,86 @@ footer a img{
         display: none;
    }
   
+/* 📱 Mobile Styles: Small Screens (Phones) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce font size */
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #searchbar {
+        width: 90%; /* Make search bar fit smaller screens */
+    }
+
+    #book-collection {
+        grid-template-columns: repeat(2, 1fr); /* Show 2 books per row */
+        gap: 10px;
+    }
+
+    .card {
+        padding: 5px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    #con-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn1 {
+        width: 100%; /* Make button full-width */
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .footer img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+/* 📱 Extra Small Screens (Narrow Phones) */
+@media (max-width: 480px) {
+    #book-collection {
+        grid-template-columns: repeat(1, 1fr); /* Show 1 book per row */
+    }
+
+    .card button {
+        width: 80%; /* Make buttons fit */
+    }
+
+    input, textarea {
+        width: 90%;
+    }
+
+    #searchbar {
+        width: 95%;
+    }
+}
 
 
 

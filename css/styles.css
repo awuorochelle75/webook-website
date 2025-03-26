@@ -197,16 +197,16 @@ footer a img{
     }
 
     .hero {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         height: auto;
         padding: 20px;
-        margin-top:0;
+        
     }
 
     nav ul {
-        flex-direction: row;
-       
+        flex-direction: column;
+       text-align: right;
         padding: 0;
     }
 

@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     const bookList = document.getElementById('book-collection');
     const searchbar = document.getElementById('searchbar');
     const genreFilter = document.getElementById('genre-filter');
+    
     let books = []; // ✅ Store books globally
 
     // ✅ Fetch books and display them
@@ -72,38 +73,32 @@ document.addEventListener('DOMContentLoaded', async function () {
     searchbar.addEventListener('input', filterBooks);
     genreFilter.addEventListener('change', filterBooks);
 
-    // ✅ Handle "Contact Us" section
-    contact.addEventListener('click', async function (e) {
-        e.preventDefault();
+    const form=document.getElementById('form-contact')
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            const name=document.getElementById('name').value
+            const email = document.getElementById('email').value
+            const text = document.getElementById('text').value
+            const message= document.getElementById('message')
 
-        const contactContent = document.getElementById('contacts-info');
-        const main = document.getElementById('main-content');
-        const search = document.querySelector('.search');
+                message.style.display="block"
+                message.style.opacity="1"
 
-        // Clear content
-        main.innerHTML = '';
-        bookList.innerHTML = '';
-        search.innerHTML = '';
+                setTimeout(()=>{
+                    message.style.transition = "opacity 1s ease-out";
+                    message.style.opacity="0"
+                },4000)
+             
 
-        // Display contact information
-        contactContent.innerHTML = `
-            <section class="contact-con" id="contacts">
-                <h1 id="contact-header">Contact us</h1>
-                <div class="contact1">
-                    <h1>We value your input! Tell us what's working and what's not.!!</h1>
-                    <p><b>Phone</b><br> +254 712562728</p>
-                    <p><b>Email</b><br><a href="mailto:webooks@gmail.com">webooks@gmail.com</a></p>
-                    <p><b>Country</b><br>Nairobi, Kenya.</p>
-                </div>
-                <div class="contact2">
-                    <form action="" class="form">
-                        <input type="text" placeholder="Your Name"><br><br>
-                        <input type="text" placeholder="Your Email"><br><br>
-                        <textarea placeholder="Your message"></textarea><br><br>
-                        <button type="sendmessage" class="btn1">Send Message</button>
-                    </form>
-                </div>  
-            </section>
-        `;
+           
+
+                
+            form.reset();
+           
+
+        })
+
     });
-});
+
+    form-section
+

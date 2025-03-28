@@ -3,23 +3,25 @@ document.addEventListener('DOMContentLoaded', async function () {
     const searchbar = document.getElementById('searchbar');
     const genreFilter = document.getElementById('genre-filter');
     
-    let books = []; // ✅ Store books globally
+    let books = [];
 
-    // ✅ Fetch books and display them
+    //In this section i am fetching my books and displaying them to the web
     async function fetchBooks() {
         try {
             const response = await fetch('https://webook-website.onrender.com/books');
-            books = await response.json(); // ✅ Store books globally
-            displayBooks(books); // ✅ Show books on page load
+            books = await response.json(); 
+            //This is what allows my books now to be displayed in page load
+            displayBooks(books); 
         } catch (error) {
             console.error('Error fetching books:', error);
         }
     }
 
 
-    // ✅ Function to display books
+    // Here basically is just my function display books,that i called
     function displayBooks(bookArray) {
-        bookList.innerHTML = ''; // Clear old books before displaying
+        //The reason for using this innerHTML is that when it loads now,it will remove anything that is to be displayed and replaces with my books.
+        bookList.innerHTML = ''; 
         bookArray.forEach(book => {
             const bookcard = document.createElement('div');
             bookcard.classList.add('card');
@@ -30,15 +32,15 @@ document.addEventListener('DOMContentLoaded', async function () {
                 <button class="purchase-btn">Purchase Book</button>
             `;
 
-            //Hidden description
           
           
+          //This appendchild is adding the new element(which is my bookcard) to the parent node(which is bookcard)
             bookList.appendChild(bookcard);
         });
         bookList.addEventListener('click', async function (event) {
             if (event.target.classList.contains('btn-view')) {
                 const bookId = event.target.dataset.id;
-               // console.log("Fetching book details for ID:", bookId);
+               // console.log("Fetching book details for ID:", bookId)
                 
                 try {
                     const response = await fetch(`https://webook-website.onrender.com/books/${bookId}`);
@@ -48,19 +50,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
                     const message = `📖 Title: ${book.title}\n✍️ Author: ${book.author}\n📝 Description: ${book.description}\n💰 Price: ${book.price}\n📚 Genre: ${book.genre}`;
                     message.style
-                    window.confirm(message); 
+
+                    alert(message); 
         
-                    // Show book details in an alert
-                   /* alert(
-                        `📖 Title: ${book.title}\n` +
-                        `✍️ Author: ${book.author}\n` +
-                        `📝 Description: ${book.description}\n` +
-                        `💰 Price: ${book.price}`
-                    );*/
-        
+                  
                 } catch (error) {
-                    console.error('Error fetching book details:', error);
-                    alert('❌ Error fetching book details. Please try again.');
+                    alert('Error fetching book details. Please try again.');
                 }
             }
         });
@@ -72,12 +67,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         
         bookList.addEventListener('click', async function (event) {
             if (event.target.classList.contains('purchase-btn')) {
-                const bookCard = event.target.closest('.card'); // Get the parent card
-                const bookId = bookCard.querySelector('.btn-view').dataset.id; // Get book ID
-        
-                const book = books.find(b => b.id == bookId);
+                const bookId = event.target.closest('.card').querySelector('[data-id]').dataset.id;
+            
+            
+                const book = books.find(book => book.id === bookId);
                 if (confirm(`Do you want to buy "${book.title}" for ${book.price}?`)) {
-                    alert('Purchase successful! Thank you for buying.');
+                    alert('Thank you for your purchase! Enjoy your book. 📚');
+
                 }
             }
         });
@@ -89,31 +85,38 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
 
+    //now this is what loads my books in a card when you immediatelty open my web page.
+    //and it also ensures you dont have to call another function for the books to load
+    await fetchBooks(); 
+    
 
-    await fetchBooks(); // ✅ Load books when the page loads
-
-    // ✅ Filtering function
+    // This is my filter function that deals with filtering the books according to the search of the user
     function filterBooks() {
-        const query = searchbar.value.toLowerCase();
+        const searchText = searchbar.value.toLowerCase();
         const selectedGenre = genreFilter.value.toLowerCase();
-
+    
         const filteredBooks = books.filter(book => {
-            const titleMatch = book.title.toLowerCase().includes(query);
-            const genreMatch = selectedGenre === "all" || book.genre.toLowerCase() === selectedGenre || selectedGenre === "";
-
-            return titleMatch && genreMatch;
+            const matchesTitle = book.title.toLowerCase().startsWith(searchText);
+            const matchesGenre = selectedGenre === "all" || selectedGenre === "" || book.genre.toLowerCase() === selectedGenre;
+    
+            return matchesTitle && matchesGenre;
         });
-
-        displayBooks(filteredBooks); // ✅ Update book list after filtering
+    
+        displayBooks(filteredBooks); 
     }
+    
 
    
 
 
-    // ✅ Attach event listeners
+    //Here i am basically adding the event listeners to listen for an input in my searchbar and
     searchbar.addEventListener('input', filterBooks);
+
+    //Here my  filter for genre is listen for a change in the genre.
     genreFilter.addEventListener('change', filterBooks);
 
+    
+    //Here we are dealing with my contact/Get in Touch section,allowing any of my users to send me message.
     const form=document.getElementById('form-contact')
         form.addEventListener('submit',function(event){
             event.preventDefault();
@@ -122,13 +125,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             const text = document.getElementById('text').value
             const message= document.getElementById('message')
 
+                //This here is the message will appear after my users click the button(send message)
+                //Just defininig the styles i have also placed,some styles are also in my css
                 message.style.display="block"
                 message.style.opacity="1"
 
+                //Here i have set the time for how long the message should appear.
                 setTimeout(()=>{
                     message.style.transition = "opacity 1s ease-out";
                     message.style.opacity="0"
-                },4000)
+                },5000)
              
 
            

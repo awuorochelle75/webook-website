@@ -5,11 +5,11 @@
 WeBook is an online book marketplace where users can browse, view details, and purchase books. The platform allows users to search for books by title, filter by genre, and interact with a seamless book shopping experience.
 
 ## **Screenshots **
-![alt text](screen.png) 
+![alt text](images/screen.png) 
 
-![alt text](screen2.png) 
+![alt text](images/screen2.png) 
 
-![alt text](screen3.png) 
+![alt text](images/screen3.png) 
 
 
 ## **Setup Instructions **

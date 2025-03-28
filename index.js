@@ -40,24 +40,23 @@ document.addEventListener('DOMContentLoaded', async function () {
         bookList.addEventListener('click', async function (event) {
             if (event.target.classList.contains('btn-view')) {
                 const bookId = event.target.dataset.id;
-               // console.log("Fetching book details for ID:", bookId)
                 
                 try {
                     const response = await fetch(`https://webook-website.onrender.com/books/${bookId}`);
                     if (!response.ok) throw new Error('Failed to fetch book details');
                     
                     const book = await response.json();
-
-                    const message = `📖 Title: ${book.title}\n✍️ Author: ${book.author}\n📝 Description: ${book.description}\n💰 Price: ${book.price}\n📚 Genre: ${book.genre}`;
-                    message.style
-
-                    alert(message); 
-        
-                  
+            
+                    // Properly format the alert message
+                    const message = `📖 Title: ${book.title}\n\n✍️ Author: ${book.author}\n\n📝 Description: ${book.description}\n\n💰 Price: ${book.price}\n\n📚 Genre: ${book.genre}`;
+                    
+                    alert(message);  // Ensure this works in your browser
+            
                 } catch (error) {
                     alert('Error fetching book details. Please try again.');
                 }
             }
+            
         });
         
         

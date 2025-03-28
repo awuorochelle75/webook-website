@@ -4,7 +4,7 @@
 ## **Description**
 WeBook is an online book marketplace where users can browse, view details, and purchase books. The platform allows users to search for books by title, filter by genre, and interact with a seamless book shopping experience.
 
-## **Screenshots **
+## Screenshots 
 ![alt text](images/screen.png) 
 
 ![alt text](images/screen2.png) 
@@ -12,7 +12,7 @@ WeBook is an online book marketplace where users can browse, view details, and p
 ![alt text](images/screen3.png) 
 
 
-## **Setup Instructions **
+## Setup Instructions 
 
 ### **Requirements**
 - Before setting up the project, ensure you have the following installed:
@@ -29,7 +29,7 @@ WeBook is an online book marketplace where users can browse, view details, and p
 
     - Web Browser
 
-### **Getting Started **
+### Getting Started 
 1. **Clone the repository**   
 Open your terminal and run the following command:
     ```sh

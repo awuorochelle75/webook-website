@@ -111,7 +111,7 @@ textarea{
 #searchbar{
    
     width:50%;
-    /*The use of these two is what brings out that nice-looking search bar. */
+    /*The use of these two is what brings out that nice-looking search bar in my web page */
     border: 0.5px solid #cccccc;
     border-radius: 5px;
 }
@@ -188,6 +188,8 @@ footer a img{
    #message{
         color:darkmagenta;
         display: none;
+        
+
    }
   
 /* 📱 Mobile Styles: Small Screens (Phones) */

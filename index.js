@@ -47,10 +47,10 @@ document.addEventListener('DOMContentLoaded', async function () {
                     
                     const book = await response.json();
             
-                    // Properly format the alert message
+                    
                     const message = `📖 Title: ${book.title}\n\n✍️ Author: ${book.author}\n\n📝 Description: ${book.description}\n\n💰 Price: ${book.price}\n\n📚 Genre: ${book.genre}`;
                     
-                    alert(message);  // Ensure this works in your browser
+                    alert(message);  
             
                 } catch (error) {
                     alert('Error fetching book details. Please try again.');

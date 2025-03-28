@@ -78,7 +78,7 @@ The app interacts with a local JSON server that acts as the backend. Here are th
 
         GET /books        # Fetch all books
         GET /books/:id    # Fetch a single book by ID
-        PATCH /books/:id  # Update book availability after purchase
+    
 
 ## Technologies Used
 - This project is built using:

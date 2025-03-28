@@ -192,10 +192,11 @@ footer a img{
 
    }
   
-/* 📱 Mobile Styles: Small Screens (Phones) */
+/* The media queries*/
+/* For mobile view*/
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Reduce font size */
+        font-size: 14px; 
     }
 
     .hero {
@@ -218,11 +219,11 @@ footer a img{
     }
 
     #searchbar {
-        width: 90%; /* Make search bar fit smaller screens */
+        width: 90%; 
     }
 
     #book-collection {
-        grid-template-columns: repeat(2, 1fr); /* Show 2 books per row */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 10px;
     }
 
@@ -242,7 +243,7 @@ footer a img{
     }
 
     .btn1 {
-        width: 100%; /* Make button full-width */
+        width: 100%; 
     }
 
     .footer {
@@ -256,14 +257,14 @@ footer a img{
     }
 }
 
-/* 📱 Extra Small Screens (Narrow Phones) */
+/* This here is for the extra small screens */
 @media (max-width: 480px) {
     #book-collection {
-        grid-template-columns: repeat(1, 1fr); /* Show 1 book per row */
+        grid-template-columns: repeat(1, 1fr); 
     }
 
     .card button {
-        width: 80%; /* Make buttons fit */
+        width: 80%; 
     }
 
     input, textarea {
